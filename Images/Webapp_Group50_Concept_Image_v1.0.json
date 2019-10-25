@@ -1,0 +1,2263 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.5]",
+  "header": {
+    "baseIris": [
+      "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://xmlns.com/foaf/0.1",
+      "http://www.example.org/Group50/Webapp"
+    ],
+    "prefixList": {
+      "obda": "https://w3id.org/obda/vocabulary#",
+      "ope": "http://www.example.org/onologyofpyschicalexercises/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "nci": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.example.org/Group50/Webapp/",
+      "oo": "http://www.example.org/Group50/Webapp/",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "ta": "http://www.example.org/Truijens/assignment4/",
+      "otf": "http://www.example.org/ontofit/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.example.org/Group50/Webapp"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.97",
+      "translation": [
+        65.91,
+        15.34
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 130,
+      "datatypeDistance": 10
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": true
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "9",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "20",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "28",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "32",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "38",
+      "type": "owl:Class"
+    },
+    {
+      "id": "54",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "61",
+      "type": "owl:Class"
+    },
+    {
+      "id": "62",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "64",
+      "type": "owl:Class"
+    },
+    {
+      "id": "65",
+      "type": "owl:Class"
+    },
+    {
+      "id": "34",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "80",
+      "type": "owl:Class"
+    },
+    {
+      "id": "41",
+      "type": "owl:Class"
+    },
+    {
+      "id": "60",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "93",
+      "type": "owl:Class"
+    },
+    {
+      "id": "51",
+      "type": "owl:Class"
+    },
+    {
+      "id": "68",
+      "type": "owl:Class"
+    },
+    {
+      "id": "94",
+      "type": "owl:Class"
+    },
+    {
+      "id": "87",
+      "type": "owl:Class"
+    },
+    {
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "40",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "86",
+      "type": "owl:Class"
+    },
+    {
+      "id": "13",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "70",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "30",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "3",
+      "iri": "http://www.example.org/Group50/Webapp/Strength",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Strength"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://www.example.org/Group50/Webapp/Force",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Force"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.org/Group50/Webapp/pull",
+          "labels": {
+            "IRI-based": "pull"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/push",
+          "labels": {
+            "IRI-based": "push"
+          }
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.example.org/Group50/Webapp/Hypertrophy",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Hypertrophy"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      }
+    },
+    {
+      "id": "9",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      }
+    },
+    {
+      "id": "20",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://www.example.org/Group50/Webapp/AdductorExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "AdductorExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.example.org/Group50/Webapp/Erector_SpinaeExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Erector_SpinaeExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "nonNegativeInteger"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.example.org/Group50/Webapp/Exercise_Classification",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Exercise_Classification"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        414.12,
+        706.97
+      ],
+      "pinned": true
+    },
+    {
+      "id": "28",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.example.org/Group50/Webapp/ChestExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ChestExercise"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1096.82,
+        464.14
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      }
+    },
+    {
+      "id": "32",
+      "iri": "http://www.example.org/Group50/Webapp/ArmExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ArmExercise"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        604.29,
+        205.34
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://www.example.org/Group50/Webapp/Back",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Back"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/erector_Spinae",
+          "labels": {
+            "IRI-based": "erector_Spinae"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/trapezius",
+          "labels": {
+            "IRI-based": "trapezius"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/latissimus_Dorsi",
+          "labels": {
+            "IRI-based": "latissimus_Dorsi"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/rhomboid",
+          "labels": {
+            "IRI-based": "rhomboid"
+          }
+        }
+      ],
+      "pos": [
+        574.76,
+        810.25
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://www.example.org/Group50/Webapp/Equipment",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Equipment"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.org/Group50/Webapp/cable",
+          "labels": {
+            "IRI-based": "cable"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/bodyweight",
+          "labels": {
+            "IRI-based": "bodyweight"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/barbell",
+          "labels": {
+            "IRI-based": "barbell"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/dumbbell",
+          "labels": {
+            "IRI-based": "dumbbell"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/machine",
+          "labels": {
+            "IRI-based": "machine"
+          }
+        }
+      ],
+      "pos": [
+        332.5,
+        531.1
+      ],
+      "pinned": true
+    },
+    {
+      "id": "38",
+      "iri": "http://www.example.org/Group50/Webapp/Endurance",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Endurance"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "54",
+      "iri": "http://www.example.org/Group50/Webapp/RhomboidExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "RhomboidExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "http://www.example.org/Group50/Webapp/AbductorExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "AbductorExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://www.example.org/Group50/Webapp/CalvesExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "CalvesExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://www.example.org/Group50/Webapp/TrapeziusExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "TrapeziusExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "http://www.example.org/Group50/Webapp/Exercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Exercise"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1052.1,
+        256.23
+      ],
+      "pinned": true
+    },
+    {
+      "id": "64",
+      "iri": "http://www.example.org/Group50/Webapp/RepRange",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "RepRange"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.org/Group50/Webapp/repRange_13-25",
+          "labels": {
+            "IRI-based": "repRange_13-25"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/repRange_1-5",
+          "labels": {
+            "IRI-based": "repRange_1-5"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/repRange_6-12",
+          "labels": {
+            "IRI-based": "repRange_6-12"
+          }
+        }
+      ],
+      "pos": [
+        1095.88,
+        694.94
+      ],
+      "pinned": true
+    },
+    {
+      "id": "65",
+      "iri": "http://www.example.org/Group50/Webapp/Upper_AbdomenExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Upper_AbdomenExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "http://www.example.org/Group50/Webapp/ForearmExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ForearmExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.example.org/Group50/Webapp/ExerciseTargetMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ExerciseTargetMuscle"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        879.13,
+        294.98
+      ]
+    },
+    {
+      "id": "80",
+      "iri": "http://www.example.org/Group50/Webapp/HamstringExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "HamstringExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.example.org/Group50/Webapp/Shoulder",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Shoulder"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/deltoid",
+          "labels": {
+            "IRI-based": "deltoid"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/rotatorCuff",
+          "labels": {
+            "IRI-based": "rotatorCuff"
+          }
+        }
+      ],
+      "pos": [
+        462.01,
+        206.32
+      ]
+    },
+    {
+      "id": "60",
+      "iri": "http://www.example.org/Group50/Webapp/ShoulderExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ShoulderExercise"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        712.06,
+        53.94
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://www.example.org/Group50/Webapp/TrainingGoals",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "TrainingGoals"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        908.36,
+        105.39
+      ],
+      "pinned": true
+    },
+    {
+      "id": "93",
+      "iri": "http://www.example.org/Group50/Webapp/QuadricepsExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "QuadricepsExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "51",
+      "iri": "http://www.example.org/Group50/Webapp/Arm",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Arm"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/tricep",
+          "labels": {
+            "IRI-based": "tricep"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/bicep",
+          "labels": {
+            "IRI-based": "bicep"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/forearm",
+          "labels": {
+            "IRI-based": "forearm"
+          }
+        }
+      ],
+      "pos": [
+        332.16,
+        315.46
+      ]
+    },
+    {
+      "id": "68",
+      "iri": "http://www.example.org/Group50/Webapp/Lower_AbdomenExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Lower_AbdomenExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "94",
+      "iri": "http://www.example.org/Group50/Webapp/GlutesExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "GlutesExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "87",
+      "iri": "http://www.example.org/Group50/Webapp/DeltoidExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "DeltoidExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "http://www.example.org/Group50/Webapp/Abdomen",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Abdomen"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/upper_Abdomen",
+          "labels": {
+            "IRI-based": "upper_Abdomen"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/obliques",
+          "labels": {
+            "IRI-based": "obliques"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/lower_Abdomen",
+          "labels": {
+            "IRI-based": "lower_Abdomen"
+          }
+        }
+      ],
+      "pos": [
+        864.97,
+        556.75
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.example.org/Group50/Webapp/TricepExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "TricepExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "http://www.example.org/Group50/Webapp/BackExercises",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "BackExercises"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        769.93,
+        582.28
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/Muscle",
+      "baseIri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "label": {
+        "IRI-based": "Muscle"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        548.17,
+        516.57
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://www.example.org/Group50/Webapp/Chest",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Chest"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/pectoralis_Minor",
+          "labels": {
+            "IRI-based": "pectoralis_Minor"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/pectoralis_Major",
+          "labels": {
+            "IRI-based": "pectoralis_Major"
+          }
+        }
+      ],
+      "pos": [
+        801.61,
+        372.48
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.example.org/Group50/Webapp/Abdomenexercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Abdomenexercise"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1138.98,
+        400.19
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.example.org/Group50/Webapp/Utility",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Utility"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.org/Group50/Webapp/auxiliary",
+          "labels": {
+            "IRI-based": "auxiliary"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/basic",
+          "labels": {
+            "IRI-based": "basic"
+          }
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.example.org/Group50/Webapp/BicepExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "BicepExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.example.org/Group50/Webapp/Leg",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Leg"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/calves",
+          "labels": {
+            "IRI-based": "calves"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/abductor",
+          "labels": {
+            "IRI-based": "abductor"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/quadricep",
+          "labels": {
+            "IRI-based": "quadricep"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/adductor",
+          "labels": {
+            "IRI-based": "adductor"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/glutes",
+          "labels": {
+            "IRI-based": "glutes"
+          }
+        },
+        {
+          "iri": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/hamstring",
+          "labels": {
+            "IRI-based": "hamstring"
+          }
+        }
+      ],
+      "pos": [
+        728.84,
+        781
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "http://www.example.org/Group50/Webapp/Pectoralis_MajorExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Pectoralis_MajorExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "86",
+      "iri": "http://www.example.org/Group50/Webapp/RotatorCuffExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "RotatorCuffExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "13",
+      "iri": "http://www.example.org/Group50/Webapp/Mechanics",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Mechanics"
+      },
+      "attributes": [
+        "external"
+      ],
+      "individuals": [
+        {
+          "iri": "http://www.example.org/Group50/Webapp/isolated",
+          "labels": {
+            "IRI-based": "isolated"
+          }
+        },
+        {
+          "iri": "http://www.example.org/Group50/Webapp/compound",
+          "labels": {
+            "IRI-based": "compound"
+          }
+        }
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "http://www.example.org/Group50/Webapp/Latissimus_DorsiExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Latissimus_DorsiExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.example.org/Group50/Webapp/ObliquesExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "ObliquesExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "http://www.example.org/Group50/Webapp/LegExercises",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "LegExercises"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        962.28,
+        595.66
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "http://www.example.org/Group50/Webapp/Pectoralis_MinorExercise",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "Pectoralis_MinorExercise"
+      },
+      "attributes": [
+        "external"
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "12",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "15",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "18",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "26",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "31",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "39",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "42",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "43",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "46",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "47",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "48",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "49",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "50",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "52",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "53",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "55",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "57",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "59",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "66",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "67",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "69",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "71",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "72",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "73",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "74",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "75",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "76",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "88",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "90",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "92",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "95",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "96",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "10",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "97",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "98",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "99",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "100",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "101",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "102",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "103",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "104",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "105",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "106",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "107",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "108",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "109",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "110",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "111",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "112",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "113",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "114",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "115",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "116",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "117",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "118",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "119",
+      "type": "owl:someValuesFrom"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "1",
+      "range": "2"
+    },
+    {
+      "id": "7",
+      "iri": "http://www.example.org/Group50/Webapp/muscleTrainedBy",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "muscleTrainedBy"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "8",
+      "range": "9",
+      "inverse": "10"
+    },
+    {
+      "id": "12",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "13",
+      "range": "6"
+    },
+    {
+      "id": "14",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "5",
+      "range": "6"
+    },
+    {
+      "id": "15",
+      "iri": "http://www.example.org/Group50/Webapp/hasMechanics",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasMechanics"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "16",
+      "range": "16"
+    },
+    {
+      "id": "18",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "19",
+      "range": "6"
+    },
+    {
+      "id": "26",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "2",
+      "range": "27",
+      "pos": [
+        955.8,
+        420.35
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "http://www.example.org/Group50/Webapp/usesEquipment",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "usesEquipment"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "16",
+      "range": "16"
+    },
+    {
+      "id": "39",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "41"
+    },
+    {
+      "id": "42",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "41"
+    },
+    {
+      "id": "43",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "44",
+      "range": "45",
+      "pos": [
+        1008.96,
+        474.48
+      ]
+    },
+    {
+      "id": "46",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "36"
+    },
+    {
+      "id": "47",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "36"
+    },
+    {
+      "id": "48",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "40"
+    },
+    {
+      "id": "49",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "41"
+    },
+    {
+      "id": "50",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "51"
+    },
+    {
+      "id": "52",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "51",
+      "range": "41"
+    },
+    {
+      "id": "53",
+      "iri": "http://xmlns.com/foaf/0.1/name",
+      "baseIri": "http://xmlns.com/foaf/0.1",
+      "label": {
+        "IRI-based": "name"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "16",
+      "range": "20"
+    },
+    {
+      "id": "55",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "51"
+    },
+    {
+      "id": "57",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "22",
+      "range": "29",
+      "pos": [
+        920.71,
+        445.32
+      ]
+    },
+    {
+      "id": "58",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "44",
+      "range": "29",
+      "pos": [
+        1009.06,
+        347.59
+      ]
+    },
+    {
+      "id": "59",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "60",
+      "range": "29",
+      "pos": [
+        795.6,
+        174.46
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://www.example.org/Group50/Webapp/hasAmountOfTrainingDays",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasAmountOfTrainingDays"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "16",
+      "range": "28"
+    },
+    {
+      "id": "67",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "68",
+      "range": "44"
+    },
+    {
+      "id": "69",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "70",
+      "range": "44"
+    },
+    {
+      "id": "71",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "24",
+      "range": "29",
+      "pos": [
+        824.53,
+        438.63
+      ]
+    },
+    {
+      "id": "72",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "32",
+      "range": "29",
+      "pos": [
+        741.71,
+        250.16
+      ]
+    },
+    {
+      "id": "73",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "41",
+      "range": "8",
+      "pos": [
+        506.93,
+        368.09
+      ]
+    },
+    {
+      "id": "74",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "51",
+      "range": "8",
+      "pos": [
+        446.05,
+        421.5
+      ]
+    },
+    {
+      "id": "75",
+      "iri": "http://www.example.org/Group50/Webapp/hasForce",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasForce"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "16",
+      "range": "16"
+    },
+    {
+      "id": "76",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "65",
+      "range": "44"
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "8",
+      "pos": [
+        560.66,
+        654.51
+      ]
+    },
+    {
+      "id": "78",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "45",
+      "range": "8",
+      "pos": [
+        698.59,
+        535.65
+      ]
+    },
+    {
+      "id": "79",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "8",
+      "pos": [
+        632.7,
+        640.29
+      ]
+    },
+    {
+      "id": "81",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "8",
+      "pos": [
+        668.9,
+        447.93
+      ]
+    },
+    {
+      "id": "82",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "62",
+      "range": "24"
+    },
+    {
+      "id": "83",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "24"
+    },
+    {
+      "id": "85",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "54",
+      "range": "24"
+    },
+    {
+      "id": "88",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "23",
+      "range": "24"
+    },
+    {
+      "id": "89",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "33",
+      "range": "32"
+    },
+    {
+      "id": "90",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "30",
+      "range": "2"
+    },
+    {
+      "id": "91",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "35",
+      "range": "32"
+    },
+    {
+      "id": "92",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "34",
+      "range": "32"
+    },
+    {
+      "id": "95",
+      "iri": "http://www.example.org/Group50/Webapp/hasNumberOfReps",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasNumberOfReps"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "16",
+      "range": "25"
+    },
+    {
+      "id": "96",
+      "iri": "http://www.example.org/Group50/Webapp/hasUtility",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasUtility"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "16",
+      "range": "16"
+    },
+    {
+      "id": "10",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "9",
+      "range": "8",
+      "inverse": "7"
+    },
+    {
+      "id": "97",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "38",
+      "range": "4"
+    },
+    {
+      "id": "98",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "87",
+      "range": "60"
+    },
+    {
+      "id": "99",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "86",
+      "range": "60"
+    },
+    {
+      "id": "100",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "11",
+      "range": "4"
+    },
+    {
+      "id": "101",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "3",
+      "range": "4"
+    },
+    {
+      "id": "102",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "94",
+      "range": "22"
+    },
+    {
+      "id": "103",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "80",
+      "range": "22"
+    },
+    {
+      "id": "104",
+      "iri": "http://www.example.org/Group50/Webapp/hasRepRange",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "hasRepRange"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "17",
+      "range": "64"
+    },
+    {
+      "id": "105",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "21",
+      "range": "22"
+    },
+    {
+      "id": "106",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "56",
+      "range": "22"
+    },
+    {
+      "id": "107",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "2",
+      "range": "29",
+      "pos": [
+        987.97,
+        379.56
+      ]
+    },
+    {
+      "id": "108",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "61",
+      "range": "22"
+    },
+    {
+      "id": "109",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "93",
+      "range": "22"
+    },
+    {
+      "id": "110",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "24",
+      "range": "36",
+      "pos": [
+        678.16,
+        689.48
+      ]
+    },
+    {
+      "id": "111",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "32",
+      "range": "51",
+      "pos": [
+        475.68,
+        257.38
+      ]
+    },
+    {
+      "id": "112",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "51",
+      "range": "45"
+    },
+    {
+      "id": "113",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "45"
+    },
+    {
+      "id": "114",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "27",
+      "range": "45"
+    },
+    {
+      "id": "115",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "40",
+      "range": "45"
+    },
+    {
+      "id": "116",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "45",
+      "range": "41"
+    },
+    {
+      "id": "117",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "51",
+      "range": "36"
+    },
+    {
+      "id": "118",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "22",
+      "range": "40",
+      "pos": [
+        853.61,
+        681.94
+      ]
+    },
+    {
+      "id": "119",
+      "iri": "http://www.example.org/Group50/Webapp/trainsMuscle",
+      "baseIri": "http://www.example.org/Group50/Webapp",
+      "label": {
+        "IRI-based": "trainsMuscle"
+      },
+      "attributes": [
+        "object",
+        "external",
+        "someValues"
+      ],
+      "domain": "60",
+      "range": "41",
+      "pos": [
+        592.92,
+        126.54
+      ]
+    }
+  ]
+}

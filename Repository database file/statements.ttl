@@ -1,0 +1,866 @@
+@prefix : <http://www.example.org/Group50/Webapp/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix nci: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix ope: <http://www.example.org/onologyofpyschicalexercises/> .
+@prefix otf: <http://www.example.org/ontofit/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ta: <http://www.example.org/Truijens/assignment4/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.org/Group50/Webapp> a owl:Ontology .
+
+:exercise_instruction a owl:AnnotationProperty .
+
+:hasForce a owl:ObjectProperty .
+
+:hasMechanics a owl:ObjectProperty .
+
+:hasRepRange a owl:ObjectProperty .
+
+:RepRange a owl:Class .
+
+:hasUtility a owl:ObjectProperty .
+
+:muscleTrainedBy a owl:ObjectProperty .
+
+:trainsMuscle a owl:ObjectProperty .
+
+nci:Muscle a owl:Class .
+
+:usesEquipment a owl:ObjectProperty .
+
+:hasAmountOfTrainingDays a owl:DatatypeProperty .
+
+:hasNumberOfReps a owl:DatatypeProperty .
+
+<http://xmlns.com/foaf/0.1/name> a owl:DatatypeProperty .
+
+:Abdomen a owl:Class .
+
+:Abdomenexercise a owl:Class .
+
+:ExerciseTargetMuscle a owl:Class .
+
+:AbductorExercise a owl:Class .
+
+nci:abductor a :Leg, owl:NamedIndividual .
+
+:LegExercises a owl:Class .
+
+:AdductorExercise a owl:Class .
+
+nci:adductor a :Leg, owl:NamedIndividual .
+
+:Arm a owl:Class .
+
+:ArmExercise a owl:Class .
+
+:Auxiliary a owl:Class .
+
+:Utility a owl:Class .
+
+:Basic a owl:Class .
+
+:Back a owl:Class .
+
+:BackExercises a owl:Class .
+
+:BicepExercise a owl:Class .
+
+nci:bicep a :Arm, owl:NamedIndividual .
+
+:CalvesExercise a owl:Class .
+
+nci:calves a :Leg, owl:NamedIndividual .
+
+:Chest a owl:Class .
+
+:ChestExercise a owl:Class .
+
+:DeltoidExercise a owl:Class .
+
+nci:deltoid a :Shoulder, owl:NamedIndividual .
+
+:ShoulderExercise a owl:Class .
+
+:Endurance a owl:Class .
+
+:repRange_13-25 a :RepRange, owl:NamedIndividual .
+
+:TrainingGoals a owl:Class .
+
+:Equipment a owl:Class .
+
+:Erector_SpinaeExercise a owl:Class .
+
+nci:erector_Spinae a :Back, owl:NamedIndividual .
+
+:Exercise a owl:Class .
+
+:Exercise_Classification a owl:Class .
+
+:Force a owl:Class .
+
+:ForearmExercise a owl:Class .
+
+nci:forearm a :Arm, owl:NamedIndividual .
+
+:GlutesExercise a owl:Class .
+
+nci:glutes a :Leg, owl:NamedIndividual .
+
+:HamstringExercise a owl:Class .
+
+nci:hamstring a :Leg, owl:NamedIndividual .
+
+:Hypertrophy a owl:Class .
+
+:repRange_6-12 a :RepRange, owl:NamedIndividual .
+
+:Latissimus_DorsiExercise a owl:Class .
+
+nci:latissimus_Dorsi a :Back, owl:NamedIndividual .
+
+:Leg a owl:Class .
+
+:Lower_AbdomenExercise a owl:Class .
+
+nci:lower_Abdomen a :Abdomen, owl:NamedIndividual .
+
+:Mechanics a owl:Class .
+
+:ObliquesExercise a owl:Class .
+
+nci:obliques a :Abdomen, owl:NamedIndividual .
+
+:Pectoralis_MajorExercise a owl:Class .
+
+nci:pectoralis_Major a :Chest, owl:NamedIndividual .
+
+:Pectoralis_MinorExercise a owl:Class .
+
+nci:pectoralis_Minor a :Chest, owl:NamedIndividual .
+
+:QuadricepsExercise a owl:Class .
+
+nci:quadricep a :Leg, owl:NamedIndividual .
+
+:RhomboidExercise a owl:Class .
+
+nci:rhomboid a :Back, owl:NamedIndividual .
+
+:RotatorCuffExercise a owl:Class .
+
+nci:rotatorCuff a :Shoulder, owl:NamedIndividual .
+
+:Shoulder a owl:Class .
+
+:Strength a owl:Class .
+
+:repRange_1-5 a :RepRange, owl:NamedIndividual .
+
+:TrapeziusExercise a owl:Class .
+
+nci:trapezius a :Back, owl:NamedIndividual .
+
+:TricepExercise a owl:Class .
+
+nci:tricep a :Arm, owl:NamedIndividual .
+
+:Upper_AbdomenExercise a owl:Class .
+
+nci:upper_Abdomen a :Abdomen, owl:NamedIndividual .
+
+:auxiliary a :Utility, owl:NamedIndividual .
+
+:barbell a :Equipment, owl:NamedIndividual .
+
+:basic a :Utility, owl:NamedIndividual .
+
+:bodyweight a :Equipment, owl:NamedIndividual .
+
+:cable a :Equipment, owl:NamedIndividual .
+
+:compound a :Mechanics, owl:NamedIndividual .
+
+:dumbbell a :Equipment, owl:NamedIndividual .
+
+:isolated a :Mechanics, owl:NamedIndividual .
+
+:machine a :Equipment, owl:NamedIndividual .
+
+:pull a :Force, owl:NamedIndividual .
+
+:push a :Force, owl:NamedIndividual .
+
+dbr:Pelvic_tilt a :Exercise .
+
+dbr:Squat_%28exercise%29%20 a :Exercise .
+
+dbr:Russian_twist a :Exercise .
+
+dbr:Sit-up a :Exercise .
+
+dbr:Wall_sit a :Exercise .
+
+dbr:Calf_raises a :Exercise .
+
+dbr:Leg_raise a :Exercise .
+
+dbr:L-sit a :Exercise .
+
+dbr:Biceps_curl a :Exercise .
+
+dbr:Leg_curl a :Exercise .
+
+dbr:Wrist_curl a :Exercise .
+
+dbr:pullover_%28exercise%29 a :Exercise .
+
+dbr:Fly_%28exercise%29 a :Exercise .
+
+dbr:Lunge_%28exercise%29 a :Exercise .
+
+dbr:Bent-over_row a :Exercise .
+
+dbr:Leg_extension a :Exercise .
+
+dbr:Military_press a :Exercise .
+
+dbr:Lying_triceps_extensions a :Exercise .
+
+dbr:Good-morning a :Exercise .
+
+dbr:Bench_press a :Exercise .
+
+dbr:Overhead_press a :Exercise .
+
+dbr:Deadlift a :Exercise .
+
+dbr:pulldown_exercise a :Exercise .
+
+dbr:Squat_%28exercise%29 a :Exercise .
+
+dbr:Shoulder_shrug a :Exercise .
+
+dbr:Leg_press a :Exercise .
+
+dbr:Upright_row a :Exercise .
+
+dbr:Hang_clean_%28weightlifting%29 a :Exercise .
+
+dbr:Rear_delt_raise a :Exercise .
+
+dbr:Front_raise a :Exercise .
+
+dbr:push_press a :Exercise .
+
+dbr:Supine_row a :Exercise .
+
+dbr:pushdown_%28exercise%29 a :Exercise .
+
+dbr:machine_fly a :Exercise .
+
+dbr:Sumo_deadlift a :Exercise .
+
+:Abdomen rdfs:subClassOf nci:Muscle .
+
+:Abdomenexercise rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node181 .
+
+_:node181 owl:someValuesFrom :Abdomen;
+  a owl:Restriction .
+
+:AbductorExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node182 .
+
+_:node182 a owl:Restriction .
+
+:LegExercises rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node197 .
+
+_:node197 a owl:Restriction;
+  owl:someValuesFrom :Leg .
+
+:AdductorExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node183 .
+
+_:node183 a owl:Restriction;
+  owl:hasValue nci:adductor .
+
+:Arm rdfs:subClassOf nci:Muscle .
+
+:ArmExercise rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node184 .
+
+_:node184 a owl:Restriction;
+  owl:someValuesFrom :Arm .
+
+:Auxiliary rdfs:subClassOf :Utility .
+
+:Utility rdfs:subClassOf :Exercise_Classification .
+
+:Basic rdfs:subClassOf :Utility .
+
+:Back rdfs:subClassOf nci:Muscle .
+
+:BackExercises rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node185 .
+
+_:node185 a owl:Restriction;
+  owl:someValuesFrom :Back .
+
+:BicepExercise rdfs:subClassOf :ArmExercise;
+  owl:equivalentClass _:node186 .
+
+_:node186 a owl:Restriction;
+  owl:hasValue nci:bicep .
+
+:CalvesExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node187 .
+
+_:node187 a owl:Restriction;
+  owl:hasValue nci:calves .
+
+:Chest rdfs:subClassOf nci:Muscle .
+
+:ChestExercise rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node188 .
+
+_:node188 owl:onProperty :trainsMuscle;
+  a owl:Restriction;
+  owl:someValuesFrom :Chest .
+
+:DeltoidExercise rdfs:subClassOf :ShoulderExercise;
+  owl:equivalentClass _:node189 .
+
+_:node189 a owl:Restriction;
+  owl:hasValue nci:deltoid;
+  owl:onProperty :trainsMuscle .
+
+:ShoulderExercise rdfs:subClassOf :ExerciseTargetMuscle;
+  owl:equivalentClass _:node205 .
+
+_:node205 a owl:Restriction;
+  owl:someValuesFrom :Shoulder .
+
+:Endurance rdfs:subClassOf :TrainingGoals;
+  owl:equivalentClass _:node190 .
+
+_:node190 a owl:Restriction;
+  owl:hasValue :repRange_13-25;
+  owl:onProperty :hasRepRange .
+
+:Erector_SpinaeExercise rdfs:subClassOf :BackExercises;
+  owl:equivalentClass _:node191 .
+
+_:node191 a owl:Restriction;
+  owl:hasValue nci:erector_Spinae;
+  owl:onProperty :trainsMuscle .
+
+:Force rdfs:subClassOf :Exercise_Classification .
+
+:ForearmExercise rdfs:subClassOf :ArmExercise;
+  owl:equivalentClass _:node192 .
+
+_:node192 a owl:Restriction;
+  owl:hasValue nci:forearm;
+  owl:onProperty :trainsMuscle .
+
+:GlutesExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node193 .
+
+_:node193 a owl:Restriction;
+  owl:hasValue nci:glutes;
+  owl:onProperty :trainsMuscle .
+
+:HamstringExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node194 .
+
+_:node194 a owl:Restriction;
+  owl:hasValue nci:hamstring;
+  owl:onProperty :trainsMuscle .
+
+:Hypertrophy rdfs:subClassOf :TrainingGoals;
+  owl:equivalentClass _:node195 .
+
+_:node195 a owl:Restriction;
+  owl:hasValue :repRange_6-12;
+  owl:onProperty :hasRepRange .
+
+:Latissimus_DorsiExercise rdfs:subClassOf :BackExercises;
+  owl:equivalentClass _:node196 .
+
+_:node196 a owl:Restriction;
+  owl:hasValue nci:latissimus_Dorsi;
+  owl:onProperty :trainsMuscle .
+
+:Leg rdfs:subClassOf nci:Muscle .
+
+:Lower_AbdomenExercise rdfs:subClassOf :Abdomenexercise;
+  owl:equivalentClass _:node198 .
+
+_:node198 a owl:Restriction;
+  owl:hasValue nci:lower_Abdomen;
+  owl:onProperty :trainsMuscle .
+
+:Mechanics rdfs:subClassOf :Exercise_Classification .
+
+:ObliquesExercise rdfs:subClassOf :Abdomenexercise;
+  owl:equivalentClass _:node199 .
+
+_:node199 a owl:Restriction;
+  owl:hasValue nci:obliques;
+  owl:onProperty :trainsMuscle .
+
+:Pectoralis_MajorExercise rdfs:subClassOf :ChestExercise;
+  owl:equivalentClass _:node200 .
+
+_:node200 a owl:Restriction;
+  owl:hasValue nci:pectoralis_Major;
+  owl:onProperty :trainsMuscle .
+
+:Pectoralis_MinorExercise rdfs:subClassOf :ChestExercise;
+  owl:equivalentClass _:node201 .
+
+_:node201 a owl:Restriction;
+  owl:hasValue nci:pectoralis_Minor;
+  owl:onProperty :trainsMuscle .
+
+:QuadricepsExercise rdfs:subClassOf :LegExercises;
+  owl:equivalentClass _:node202 .
+
+_:node202 a owl:Restriction;
+  owl:hasValue nci:quadricep;
+  owl:onProperty :trainsMuscle .
+
+:RhomboidExercise rdfs:subClassOf :BackExercises;
+  owl:equivalentClass _:node203 .
+
+_:node203 a owl:Restriction;
+  owl:hasValue nci:rhomboid;
+  owl:onProperty :trainsMuscle .
+
+:RotatorCuffExercise rdfs:subClassOf :ShoulderExercise;
+  owl:equivalentClass _:node204 .
+
+_:node204 a owl:Restriction;
+  owl:hasValue nci:rotatorCuff;
+  owl:onProperty :trainsMuscle .
+
+:Shoulder rdfs:subClassOf nci:Muscle .
+
+:Strength rdfs:subClassOf :TrainingGoals;
+  owl:equivalentClass _:node206 .
+
+_:node206 a owl:Restriction;
+  owl:hasValue :repRange_1-5;
+  owl:onProperty :hasRepRange .
+
+:TrapeziusExercise rdfs:subClassOf :BackExercises;
+  owl:equivalentClass _:node207 .
+
+_:node207 a owl:Restriction;
+  owl:hasValue nci:trapezius;
+  owl:onProperty :trainsMuscle .
+
+:TricepExercise rdfs:subClassOf :ArmExercise;
+  owl:equivalentClass _:node208 .
+
+_:node208 a owl:Restriction;
+  owl:hasValue nci:tricep;
+  owl:onProperty :trainsMuscle .
+
+:Upper_AbdomenExercise rdfs:subClassOf :Abdomenexercise;
+  owl:equivalentClass _:node209 .
+
+_:node209 a owl:Restriction;
+  owl:hasValue nci:upper_Abdomen;
+  owl:onProperty :trainsMuscle .
+
+:muscleTrainedBy rdfs:domain nci:Muscle;
+  owl:inverseOf :trainsMuscle .
+
+:hasRepRange rdfs:range :RepRange .
+
+:trainsMuscle rdfs:range nci:Muscle .
+
+:hasNumberOfReps rdfs:range xsd:nonNegativeInteger .
+
+dbr:Pelvic_tilt :exercise_instruction "Raise hips up by extending hips until fully extended. Lower hips until hips and back make contact with mat. Repeat.";
+  rdfs:comment "Pelvic tilt is the orientation of the pelvis in respect to the thighbones and the rest of the body. The pelvis can tilt towards the front, back, or either side of the body."@en;
+  rdfs:label "Pelvic tilt"@en .
+
+dbr:Russian_twist :exercise_instruction "Turn torso to one side while keeping arms straight and perpendicular to torso throughout movement. Return dumbbell back over shoulders by rotating torso to original position. Continue lowering dumbbell to opposite side. Repeat.";
+  rdfs:comment "The Russian Twist is a type of exercise that is used to work the abdomen muscles by performing a twisting motion on the abdomen. The exercise is believed by those who practice it to build explosiveness in the upper torso, which may help in sports such as swimming, baseball, track & field, hockey, golf, lacrosse, or boxing."@en;
+  rdfs:label "Russian twist"@en .
+
+dbr:Sit-up :exercise_instruction "Raise torso from bench by bending waist and hips. Return until back of shoulders contact incline board. Repeat.";
+  rdfs:comment "The sit-up is an abdominal endurance training exercise commonly performed to strengthen and tone the abdominal muscles. It is similar to a crunch (crunches target the rectus abdominus and also work the external and internal obliques), but sit-ups have a fuller range of motion and condition additional muscles. Sit-ups target the hip flexors, rectus abdominus and also work the iliopsoas, tensor fasciae latae, rectus femoris, sartorius, and, to a very small degree, the obliques."@en;
+  rdfs:label "Sit-up"@en .
+
+dbr:Wall_sit :exercise_instruction "Make sure your back is flat against the wall. Set your feet about shoulder-width apart and then about 2 ft out from the wall. Slide your back down the wall bending your legs until they’re in a 90 degree angle—or as close as you can get! Your knees should be directly above your ankles but no more forward. HOLD your position while contracting your abs. Stand slowly while leaning against the wall when done.";
+  rdfs:comment "A wall sit, also known as a Roman Chair, is an exercise done to strengthen the quadriceps muscles. It is characterized by the two right angles formed by the body, one at the hips and one at the knees. The person wall sitting places their back against a wall with their feet shoulder width apart and a little ways out from the wall. Then, keeping their back against the wall, they lower their hips until their knees form right angles. This is a very intense work out for the quadriceps muscles. It can be very painful to hold this position for extended periods of time. Wall sits are used as a primary strengthening exercise in many sports requiring strong quadriceps like fencing, ice hockey, sailing (mostly small boat racing), skiing and track and field.This exercise is also used as a disciplinary"@en;
+  rdfs:label "Wall sit"@en;
+  :hasForce :push .
+
+dbr:Calf_raises :exercise_instruction "Raise heels by extending ankles as high as possible. Lower heels by bending ankles until calves are stretched. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "Calf raises are a method of exercising the gastrocnemius, tibialis posterior and soleus muscles of the lower leg. The movement performed is plantar flexion, aka ankle extension."@en;
+  rdfs:label "Calf raises"@en .
+
+dbr:Leg_raise :exercise_instruction "pull lower leg bar up by flexing hips toward arms by flexing hips then waist. Continue to raise knees toward shoulders by flexing waist raising hips from board. Return until waist and hips are extended down to original position. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "The leg raise is a strength training exercise which targets the iliopsoas (the interior hip flexors). Because the abdominal muscles are used isometrically to stabilize the body during the motion, leg raises are also often used to strengthen the rectus abdominis muscle and the internal and external oblique muscles."@en;
+  rdfs:label "Leg raise"@en .
+
+dbr:L-sit :exercise_instruction "Simultaneously raise knees and torso until hips and knees are flexed. Return to starting position with waist hips and knees extended. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "The L-sit is an acrobatic body position in which all body weight rests on the hands, with the torso held in a slightly forward-leaning orientation, with legs held horizontally so that each leg forms a nominal right-angle with the torso. The right-angle causes the body to have a notable \"L\" shape, hence the name \"L-sit\". It requires significant abdominal strength. When executing an L-sit, a variety of supports may be used by the performer, including gymnastics apparatus such as the floor, rings, parallel bars or parallettes, or the hands of an adagio partner."@en;
+  rdfs:label "L-sit"@en .
+
+dbr:Biceps_curl :exercise_instruction "With elbows to side raise bar until forearms are vertical. Lower until arms are fully extended. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "The term \"biceps curl\" may refer to any of a number of weight training exercises that target the biceps brachii muscle."@en;
+  rdfs:label "Biceps curl"@en .
+
+dbr:Leg_curl :exercise_instruction "Raise ankles to glutes by flexing knees. Lower ankles until knees are straight. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "The leg curl is an isolation exercise that targets the hamstring muscles. The exercise involves flexing the lower leg against resistance towards the buttocks. Other exercises that can be used to strengthen the hamstrings are the glute-ham raise and the deadlift."@en;
+  rdfs:label "Leg curl"@en .
+
+dbr:Wrist_curl :exercise_instruction "Allow dumbbell to roll out of palm down to fingers. Raise dumbbell back up by gripping and pointing knuckles up as high as possible. Lower and repeat.";
+  :hasForce :pull;
+  rdfs:comment "The wrist curl is a weight training exercise for developing just the wrist flexor muscles of the forearm. It is therefore an isolation exercise. Ideally, it should be done in combination with the \"reverse wrist curl\" (also called wrist extension) to ensure equal development of the wrist flexor and wrist extensor muscles."@en;
+  rdfs:label "Wrist curl"@en .
+
+dbr:Bent-over_row :exercise_instruction "pull bar to upper waist. Return until arms are extended and shoulders are stretched downward. Repeat.";
+  :hasForce :pull;
+  rdfs:comment "A bent-over row (or barbell row) is a weight training exercise that targets a variety of back muscles. Which ones are targeted varies on form. The bent over row is often used for both bodybuilding and powerlifting. It is a good exercise for increasing strength and size."@en;
+  rdfs:label "Bent-over row"@en .
+
+dbr:Leg_extension :exercise_instruction "Move lever forward and upward by extending knees until legs are straight. Return lever to original position by bending knees. Repeat.";
+  :hasForce :push;
+  rdfs:comment "The leg extension is a resistance weight training exercise that targets the quadriceps muscle in the legs. The exercise is done using a machine called the Leg Extension Machine. There are various manufacturers of these machines and each one is slightly different. Most gym and weight rooms will have the machine in their facility. The leg extension is an isolated exercise targeting one specific muscle group, the quadriceps. It should not be considered as a total leg workout, such as the squat or deadlift."@en;
+  rdfs:label "Leg extension"@en .
+
+dbr:Military_press :exercise_instruction "Press bar upward until arms are extended overhead. Lower to front of neck and repeat.";
+  :hasForce :push;
+  rdfs:comment "The military press is a variation of the overhead press weight training exercise using very strict form and no pre-movement momentum. The military press targets the deltoid muscles in the shoulders as well as the triceps. Additionally, it works the core and legs, which the lifter uses to help stabilize the weight. The lift begins with the lifter standing with both feet together and the barbell on the anterior deltoids. The lifter then raises the barbell overhead by pressing the palms of the hands against the underside of the barbell."@en;
+  rdfs:label "Military press"@en .
+
+dbr:Lying_triceps_extensions :exercise_instruction "Lower bar by bending elbows. As bar nears head move elbows slightly back just enough to allow bar to clear around curvature of head. Extend arms. As bar clears head reposition elbows to their former position until arms are fully extended. Repeat.";
+  :hasForce :push;
+  rdfs:comment "Lying triceps extensions, also known as skull crushers and French extensions or French presses, are a strength exercise used in many different forms of strength training. Lying triceps extensions are one of the most stimulating exercises to the entire triceps muscle group in the upper arm. It works the triceps from the elbow all the way to the latissimus dorsi. Due to its full use of the Triceps muscle group, the lying triceps extensions are used by many as part of their training regimen."@en;
+  rdfs:label "Lying triceps extensions"@en .
+
+dbr:Good-morning :exercise_instruction "Keeping back straight bend hips to lower torso forward until parallel to floor. Raise torso until hips are extended. Repeat.";
+  :hasForce :push;
+  rdfs:comment "The good-morning is a weight-lifting exercise. It is known as a good morning because of the movement in the erector spinae which resembles the rise out of bed to stretch. The erector spinae muscles of the lower back work isometrically to keep the spine in an extended position while the hamstrings and gluteus maximus work isotonically to perform hip extension. Other muscles are involved in stabilizing weight on the back and maintaining balance."@en;
+  rdfs:label "Good-morning"@en .
+
+dbr:Bench_press :exercise_instruction "Lower weight to chest. Press bar upward until arms are extended. Repeat.";
+  :hasForce :push;
+  rdfs:comment "The bench press is an upper body strength training exercise that consists of pressing a weight upwards from a supine position. The exercise works the pectoralis major as well as supporting chest, arm, and shoulder muscles such as the anterior deltoids, serratus anterior, coracobrachialis, scapulae fixers, trapezii, and the triceps. A barbell is generally used to hold the weight, but a pair of dumbbells can also be used."@en;
+  rdfs:label "Bench press"@en .
+
+dbr:Overhead_press :exercise_instruction "Press bar upward until arms are extended overhead. Return to upper chest and repeat.";
+  :hasForce :push;
+  :hasMechanics :compound;
+  rdfs:comment "The press, overhead press or shoulder press is a weight training exercise, typically performed while standing, in which a weight is pressed straight upwards from the shoulders until the arms are locked out overhead."@en;
+  rdfs:label "Overhead press"@en .
+
+dbr:Deadlift :exercise_instruction "Lift bar by extending hips and knees to full extension. pull shoulders back at top of lift if rounded. Return weights to floor by bending hips back while allowing knees to bend forward keeping back straight and knees pointed same direction as feet. Repeat.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  rdfs:comment "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the hips, then lowered back to the ground. It is one of the three powerlifting exercises, along with the squat and bench press."@en;
+  rdfs:label "Deadlift"@en .
+
+dbr:Shoulder_shrug :exercise_instruction "Elevate shoulders as high as possible. Lower and repeat.";
+  :hasForce :pull;
+  :hasMechanics :isolated;
+  rdfs:comment "The shoulder shrug (usually called simply the shrug) is an exercise in weight training used to develop the upper trapezius muscle."@en;
+  rdfs:label "Shoulder shrug"@en .
+
+dbr:Leg_press :exercise_instruction "Lower sled by flexing hips and knees until knees are just short of complete flexion. Return by extending knees and hips. Repeat.";
+  :hasForce :push;
+  :hasMechanics :compound;
+  rdfs:comment "The leg press is a weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press also refers to the apparatus used to perform this exercise. The leg press can be used to evaluate an athlete's overall lower body strength (from knee joint to hip). It has the potential to inflict grave injury: the knees could bend the wrong way if they are locked during a leg press. There are two main types of leg press:"@en;
+  rdfs:label "Leg press"@en .
+
+dbr:Upright_row :exercise_instruction "pull bar to neck with elbows leading. Allow wrists to flex as bar rises. Lower and repeat.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  rdfs:comment "The upright row is a weight training exercise performed by holding a grips with the overhand grip and lifting it straight up to the collarbone. This is a compound exercise that involves the trapezius, the deltoids and the biceps. The narrower the grip the more the trapezius muscles are exercised, as opposed to the deltoids. Barbells, dumbbells, kettlebells or a cable machine can be used. Recordsetter World Record holder Jason Faulkner (Incredible Faulk) features a video is which 225 Pounds was pulled left handed for a dozen reps on smith machine, he is right hand dominant."@en;
+  rdfs:label "Upright row"@en .
+
+dbr:Rear_delt_raise :exercise_instruction "Raise upper arms to sides until elbows are shoulder height. Maintain upper arms perpendicular to torso and fixed elbow position (10° to 30° angle) throughout exercise. Maintain height of elbows above wrists by raising \"pinkie finger\" side up. Lower and repeat.";
+  :hasForce :pull;
+  :hasMechanics :isolated;
+  rdfs:comment "The rear delt raise, also known as the rear deltoid raise, or rear shoulder raise is an exercise in weight training. This exercise is an isolation exercise that heavily works the posterior deltoid muscle. The movement is primarily limited to the two shoulder joints: the glenohumeral joint and the scapulothoracic joint. Scapular movement will also cause movement in the sternoclavicular joint and acromioclavicular joint. If the elbow bends during the extension exercises, it gravitates into a rowing motion."@en;
+  rdfs:label "Rear delt raise"@en .
+
+dbr:Front_raise :exercise_instruction "Raise dumbbells forward and upward until upper arms are above horizontal. Lower and repeat.";
+  :hasForce :push;
+  :hasMechanics :isolated;
+  rdfs:comment "The front raise is a weight training exercise. This exercise is an isolation exercise which isolates shoulder flexion. It primarily works the anterior deltoid, with assistance from the serratus anterior, biceps brachii and clavicular portions of the pectoralis major. The front raise is normally carried out in three to five sets during a shoulder workout. Repetitions depend on the a lifter's training program and goals."@en;
+  rdfs:label "Front raise"@en .
+
+dbr:Supine_row :exercise_instruction "Keeping body straight pull body up to bar. Return until arms are extended and shoulders are stretched forward. Repeat.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  rdfs:comment "The supine row (or inverted row) is an exercise in weight training. It primarily works the muscles of the upper back—the trapezius and latissimus dorsi—as well as the biceps as a secondary muscle group. The supine row is normally carried out in three to five sets, but repetitions depend on the type of training a lifter is using to make their required gains."@en;
+  rdfs:label "Supine row"@en .
+
+dbr:Sumo_deadlift :exercise_instruction "pull bar up by driving feet outward while pulling chest up. Extend knees when bar passes knees. At top of lift when torso is upright drive shoulders back and chest up. Return weight to floor by bending hips back and knees pointed outward while keeping chest high and back straight. Repeat.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  rdfs:comment "The Sumo Deadlift is a variation of the Conventional Deadlift often adopted by powerlifters. The difference between the two lies in the setup of the lifter's feet and hands. When the bar is gripped with the lifter's hands inside their legs, the form is considered \"Sumo.\" Traditionally, hip stance is far wider in Sumo Deadlifts, and toes are pointed slightly outwards."@en;
+  rdfs:label "Sumo deadlift"@en .
+
+dbr:Squat_%28exercise%29%20 :exercise_instruction "Squat down by bending hips back while allowing knees to bend forward keeping back straight and knees pointed same direction as feet. Descend until knees and hips are fully bent. Extend knees and hips until legs are straight. Return and repeat";
+  :hasForce :push;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:pullover_%28exercise%29 :exercise_instruction "Keeping elbows slightly bent throughout movement lower dumbbell over and beyond head until upper arms are in-line with torso. pull dumbbell up and over chest. Repeat.";
+  :hasForce :push;
+  :hasMechanics :isolated;
+  :hasUtility :auxiliary .
+
+dbr:Fly_%28exercise%29 :exercise_instruction "Lower dumbbells to sides until chest muscles are stretched with elbows fixed in slightly bent position. Bring dumbbells together in wide hugging motion until dumbbells are nearly together. Repeat.";
+  :hasForce :push;
+  :hasMechanics :isolated;
+  :hasUtility :auxiliary .
+
+dbr:Lunge_%28exercise%29 :exercise_instruction "Lunge forward with first leg. Land on heel then forefoot. Lower body by flexing knee and hip of front leg until knee of rear leg is almost in contact with floor. Return to original standing position by forcibly extending hip and knee of forward leg. Repeat by alternating lunge with opposite leg.";
+  :hasForce :push;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:pulldown_exercise :exercise_instruction "pull down cable bar to upper chest. Return until arms and shoulders are fully extended. Repeat.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:Squat_%28exercise%29 :exercise_instruction "Squat down by bending hips back while allowing knees to bend forward keeping back straight and knees pointed same direction as feet. Descend until thighs are just past parallel to floor. Extend knees and hips until legs are straight. Return and repeat.";
+  :hasForce :push;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:Hang_clean_%28weightlifting%29 :exercise_instruction "Jump upward extending body. Shrug shoulders and pull barbell upward with arms allowing elbows to flex out to sides keeping bar close to body. Aggressively pull body under bar rotating elbows around bar. Catch bar on shoulders while moving into squat position. Hitting bottom of squat stand up immediately.";
+  :hasForce :pull;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:push_press :exercise_instruction "Dip body by bending knees hips and ankles slightly. Explosively drive upward with legs driving barbell up off shoulders vigorously extending arms overhead. Return to shoulders and repeat.";
+  :hasForce :push;
+  :hasMechanics :compound;
+  :hasUtility :basic .
+
+dbr:pushdown_%28exercise%29 :exercise_instruction "Extend arms down. Return until forearm is close to upper arm. Repeat.";
+  :hasForce :push;
+  :hasMechanics :isolated;
+  :hasUtility :basic .
+
+dbr:machine_fly :exercise_instruction "Keeping elbows pointed high push lever handles forward and together. Return to back toward original position until mild stretch is felt in chest or shoulder. Repeat.";
+  :hasForce :push;
+  :hasMechanics :isolated;
+  :hasUtility :auxiliary;
+  :trainsMuscle nci:pectoralis_Major .
+
+dbr:Pelvic_tilt :hasForce :push;
+  :hasMechanics :isolated;
+  :hasUtility :auxiliary;
+  :trainsMuscle nci:glutes;
+  :usesEquipment :bodyweight .
+
+dbr:Russian_twist :hasForce :pull;
+  :hasMechanics :isolated;
+  :hasUtility :auxiliary;
+  :trainsMuscle nci:obliques;
+  :usesEquipment :dumbbell .
+
+dbr:Sit-up :hasForce :pull;
+  :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:upper_Abdomen;
+  :usesEquipment :bodyweight .
+
+dbr:Wall_sit :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:quadricep;
+  :usesEquipment :bodyweight .
+
+dbr:Calf_raises :hasMechanics :isolated;
+  :hasUtility :basic;
+  :trainsMuscle nci:calves;
+  :usesEquipment :barbell .
+
+dbr:Leg_raise :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:lower_Abdomen;
+  :usesEquipment :machine .
+
+dbr:L-sit :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:lower_Abdomen;
+  :usesEquipment :bodyweight .
+
+dbr:Biceps_curl :hasMechanics :isolated;
+  :hasUtility :basic;
+  :trainsMuscle nci:bicep;
+  :usesEquipment :barbell .
+
+dbr:Leg_curl :hasMechanics :isolated;
+  :hasUtility :basic;
+  :trainsMuscle nci:hamstring;
+  :usesEquipment :machine .
+
+dbr:Wrist_curl :hasMechanics :isolated;
+  :hasUtility :basic;
+  :trainsMuscle nci:forearm;
+  :usesEquipment :dumbbell .
+
+dbr:Bent-over_row :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:latassimus_Dorsi;
+  :usesEquipment :barbell .
+
+dbr:Leg_extension :hasMechanics :isolated;
+  :hasUtility :auxiliary;
+  :trainsMuscle nci:quadricep;
+  :usesEquipment :machine .
+
+dbr:Military_press :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:deltoid;
+  :usesEquipment :barbell .
+
+dbr:Lying_triceps_extensions :hasMechanics :isolated;
+  :hasUtility :basic;
+  :trainsMuscle nci:tricep;
+  :usesEquipment :dumbbell .
+
+dbr:Good-morning :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:hamstring;
+  :usesEquipment :barbell .
+
+dbr:Bench_press :hasMechanics :compound;
+  :hasUtility :basic;
+  :trainsMuscle nci:pectoralis_Major;
+  :usesEquipment :barbell .
+
+dbr:Overhead_press :hasUtility :basic;
+  :trainsMuscle nci:deltoid;
+  :usesEquipment :barbell .
+
+dbr:Deadlift :hasUtility :basic;
+  :trainsMuscle nci:latassimus_Dorsi;
+  :usesEquipment :barbell .
+
+dbr:Shoulder_shrug :hasUtility :basic;
+  :trainsMuscle nci:trapezius;
+  :usesEquipment :dumbbell .
+
+dbr:Leg_press :hasUtility :basic;
+  :trainsMuscle nci:quadricep;
+  :usesEquipment :machine .
+
+dbr:Upright_row :hasUtility :basic;
+  :trainsMuscle nci:deltoid;
+  :usesEquipment :barbell .
+
+dbr:Rear_delt_raise :hasUtility :auxiliary;
+  :trainsMuscle nci:deltoid;
+  :usesEquipment :dumbbell .
+
+dbr:Front_raise :hasUtility :auxiliary;
+  :trainsMuscle nci:deltoid;
+  :usesEquipment :dumbbell .
+
+dbr:Supine_row :hasUtility :basic;
+  :trainsMuscle nci:trapezius;
+  :usesEquipment :barbell .
+
+dbr:Sumo_deadlift :hasUtility :basic;
+  :trainsMuscle nci:hamstring;
+  :usesEquipment :barbell .
+
+dbr:Squat_%28exercise%29%20 :trainsMuscle nci:quadricep;
+  :usesEquipment :barbell .
+
+dbr:pullover_%28exercise%29 :trainsMuscle nci:pectoralis_Major;
+  :usesEquipment :barbell .
+
+dbr:Fly_%28exercise%29 :trainsMuscle nci:pectoralis_Major;
+  :usesEquipment :dumbbell .
+
+dbr:Lunge_%28exercise%29 :trainsMuscle nci:quadricep;
+  :usesEquipment :barbell .
+
+dbr:pulldown_exercise :trainsMuscle nci:latassimus_Dorsi;
+  :usesEquipment :machine .
+
+dbr:Squat_%28exercise%29 :trainsMuscle nci:quadricep;
+  :usesEquipment :barbell .
+
+dbr:Hang_clean_%28weightlifting%29 :trainsMuscle nci:trapezius;
+  :usesEquipment :barbell .
+
+dbr:push_press :trainsMuscle nci:deltoid;
+  :usesEquipment :barbell .
+
+dbr:pushdown_%28exercise%29 :trainsMuscle nci:tricep;
+  :usesEquipment :cable .
+
+dbr:machine_fly :usesEquipment :machine .
+
+:Auxiliary owl:disjointWith :Basic .
+
+_:node210 a owl:AllDisjointClasses;
+  owl:members _:node211 .
+
+_:node211 rdf:first :Abdomen;
+  rdf:rest _:node212 .
+
+_:node212 rdf:first :Arm;
+  rdf:rest _:node213 .
+
+_:node213 rdf:first :Back;
+  rdf:rest _:node214 .
+
+_:node214 rdf:first :Chest;
+  rdf:rest _:node215 .
+
+_:node215 rdf:first :Leg;
+  rdf:rest _:node216 .
+
+_:node216 rdf:first :Shoulder;
+  rdf:rest rdf:nil .
+
+_:node182 owl:hasValue nci:abductor;
+  owl:onProperty :trainsMuscle .
+
+_:node181 owl:onProperty :trainsMuscle .
+
+_:node183 owl:onProperty :trainsMuscle .
+
+_:node184 owl:onProperty :trainsMuscle .
+
+_:node185 owl:onProperty :trainsMuscle .
+
+_:node186 owl:onProperty :trainsMuscle .
+
+_:node187 owl:onProperty :trainsMuscle .
+
+_:node197 owl:onProperty :trainsMuscle .
+
+_:node205 owl:onProperty :trainsMuscle .

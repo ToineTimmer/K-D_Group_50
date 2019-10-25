@@ -1,0 +1,40 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 250pt;
+    font-size: 12pt;
+    background-color: #d3f7f4 }
+
+        h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 0pt;
+    padding-left: 150pt;
+    padding-top: 5pt;
+    font-size: 16pt;
+        }
+
+    h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 0pt;
+    font-size: 10pt;
+        }
+
+        /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+  }
+  th,td {
+    padding: 5px;
+  }
