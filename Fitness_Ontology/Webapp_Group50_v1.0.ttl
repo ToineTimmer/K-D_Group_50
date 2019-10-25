@@ -1,0 +1,605 @@
+@prefix : <http://www.example.org/Group50/Webapp/> .
+@prefix oo: <http://www.example.org/Group50/Webapp/> .
+@prefix ta: <http://www.example.org/Truijens/assignment4/> .
+@prefix nci: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/> .
+@prefix ope: <http://www.example.org/onologyofpyschicalexercises/> .
+@prefix otf: <http://www.example.org/ontofit/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.org/Group50/Webapp> .
+
+<http://www.example.org/Group50/Webapp> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.example.org/Group50/Webapp/exercise_instruction
+oo:exercise_instruction rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.example.org/Group50/Webapp/hasForce
+oo:hasForce rdf:type owl:ObjectProperty .
+
+
+###  http://www.example.org/Group50/Webapp/hasMechanics
+oo:hasMechanics rdf:type owl:ObjectProperty .
+
+
+###  http://www.example.org/Group50/Webapp/hasRepRange
+oo:hasRepRange rdf:type owl:ObjectProperty ;
+               rdfs:range oo:RepRange .
+
+
+###  http://www.example.org/Group50/Webapp/hasUtility
+oo:hasUtility rdf:type owl:ObjectProperty .
+
+
+###  http://www.example.org/Group50/Webapp/muscleTrainedBy
+oo:muscleTrainedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf oo:trainsMuscle ;
+                   rdfs:domain nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/trainsMuscle
+oo:trainsMuscle rdf:type owl:ObjectProperty ;
+                rdfs:range nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/usesEquipment
+oo:usesEquipment rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.example.org/Group50/Webapp/hasAmountOfTrainingDays
+oo:hasAmountOfTrainingDays rdf:type owl:DatatypeProperty .
+
+
+###  http://www.example.org/Group50/Webapp/hasNumberOfReps
+oo:hasNumberOfReps rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/Muscle
+nci:Muscle rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/Abdomen
+oo:Abdomen rdf:type owl:Class ;
+           rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/Abdomenexercise
+oo:Abdomenexercise rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty oo:trainsMuscle ;
+                                         owl:someValuesFrom oo:Abdomen
+                                       ] ;
+                   rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/AbductorExercise
+oo:AbductorExercise rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty oo:trainsMuscle ;
+                                          owl:hasValue nci:abductor
+                                        ] ;
+                    rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/AdductorExercise
+oo:AdductorExercise rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty oo:trainsMuscle ;
+                                          owl:hasValue nci:adductor
+                                        ] ;
+                    rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/Arm
+oo:Arm rdf:type owl:Class ;
+       rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/ArmExercise
+oo:ArmExercise rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty oo:trainsMuscle ;
+                                     owl:someValuesFrom oo:Arm
+                                   ] ;
+               rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/Back
+oo:Back rdf:type owl:Class ;
+        rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/BackExercises
+oo:BackExercises rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty oo:trainsMuscle ;
+                                       owl:someValuesFrom oo:Back
+                                     ] ;
+                 rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/BicepExercise
+oo:BicepExercise rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty oo:trainsMuscle ;
+                                       owl:hasValue nci:bicep
+                                     ] ;
+                 rdfs:subClassOf oo:ArmExercise .
+
+
+###  http://www.example.org/Group50/Webapp/CalvesExercise
+oo:CalvesExercise rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty oo:trainsMuscle ;
+                                        owl:hasValue nci:calves
+                                      ] ;
+                  rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/Chest
+oo:Chest rdf:type owl:Class ;
+         rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/ChestExercise
+oo:ChestExercise rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty oo:trainsMuscle ;
+                                       owl:someValuesFrom oo:Chest
+                                     ] ;
+                 rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/DeltoidExercise
+oo:DeltoidExercise rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty oo:trainsMuscle ;
+                                         owl:hasValue nci:deltoid
+                                       ] ;
+                   rdfs:subClassOf oo:ShoulderExercise .
+
+
+###  http://www.example.org/Group50/Webapp/Endurance
+oo:Endurance rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty oo:hasRepRange ;
+                                   owl:hasValue oo:repRange_13-25
+                                 ] ;
+             rdfs:subClassOf oo:TrainingGoals .
+
+
+###  http://www.example.org/Group50/Webapp/Equipment
+oo:Equipment rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/Erector_SpinaeExercise
+oo:Erector_SpinaeExercise rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty oo:trainsMuscle ;
+                                                owl:hasValue nci:erector_Spinae
+                                              ] ;
+                          rdfs:subClassOf oo:BackExercises .
+
+
+###  http://www.example.org/Group50/Webapp/Exercise
+oo:Exercise rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/ExerciseTargetMuscle
+oo:ExerciseTargetMuscle rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/Exercise_Classification
+oo:Exercise_Classification rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/Force
+oo:Force rdf:type owl:Class ;
+         rdfs:subClassOf oo:Exercise_Classification .
+
+
+###  http://www.example.org/Group50/Webapp/ForearmExercise
+oo:ForearmExercise rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty oo:trainsMuscle ;
+                                         owl:hasValue nci:forearm
+                                       ] ;
+                   rdfs:subClassOf oo:ArmExercise .
+
+
+###  http://www.example.org/Group50/Webapp/GlutesExercise
+oo:GlutesExercise rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty oo:trainsMuscle ;
+                                        owl:hasValue nci:glutes
+                                      ] ;
+                  rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/HamstringExercise
+oo:HamstringExercise rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty oo:trainsMuscle ;
+                                           owl:hasValue nci:hamstring
+                                         ] ;
+                     rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/Hypertrophy
+oo:Hypertrophy rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty oo:hasRepRange ;
+                                     owl:hasValue oo:repRange_6-12
+                                   ] ;
+               rdfs:subClassOf oo:TrainingGoals .
+
+
+###  http://www.example.org/Group50/Webapp/Latissimus_DorsiExercise
+oo:Latissimus_DorsiExercise rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty oo:trainsMuscle ;
+                                                  owl:hasValue nci:latissimus_Dorsi
+                                                ] ;
+                            rdfs:subClassOf oo:BackExercises .
+
+
+###  http://www.example.org/Group50/Webapp/Leg
+oo:Leg rdf:type owl:Class ;
+       rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/LegExercises
+oo:LegExercises rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty oo:trainsMuscle ;
+                                      owl:someValuesFrom oo:Leg
+                                    ] ;
+                rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/Lower_AbdomenExercise
+oo:Lower_AbdomenExercise rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty oo:trainsMuscle ;
+                                               owl:hasValue nci:lower_Abdomen
+                                             ] ;
+                         rdfs:subClassOf oo:Abdomenexercise .
+
+
+###  http://www.example.org/Group50/Webapp/Mechanics
+oo:Mechanics rdf:type owl:Class ;
+             rdfs:subClassOf oo:Exercise_Classification .
+
+
+###  http://www.example.org/Group50/Webapp/ObliquesExercise
+oo:ObliquesExercise rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty oo:trainsMuscle ;
+                                          owl:hasValue nci:obliques
+                                        ] ;
+                    rdfs:subClassOf oo:Abdomenexercise .
+
+
+###  http://www.example.org/Group50/Webapp/Pectoralis_MajorExercise
+oo:Pectoralis_MajorExercise rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty oo:trainsMuscle ;
+                                                  owl:hasValue nci:pectoralis_Major
+                                                ] ;
+                            rdfs:subClassOf oo:ChestExercise .
+
+
+###  http://www.example.org/Group50/Webapp/Pectoralis_MinorExercise
+oo:Pectoralis_MinorExercise rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty oo:trainsMuscle ;
+                                                  owl:hasValue nci:pectoralis_Minor
+                                                ] ;
+                            rdfs:subClassOf oo:ChestExercise .
+
+
+###  http://www.example.org/Group50/Webapp/QuadricepsExercise
+oo:QuadricepsExercise rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty oo:trainsMuscle ;
+                                            owl:hasValue nci:quadricep
+                                          ] ;
+                      rdfs:subClassOf oo:LegExercises .
+
+
+###  http://www.example.org/Group50/Webapp/RepRange
+oo:RepRange rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/RhomboidExercise
+oo:RhomboidExercise rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty oo:trainsMuscle ;
+                                          owl:hasValue nci:rhomboid
+                                        ] ;
+                    rdfs:subClassOf oo:BackExercises .
+
+
+###  http://www.example.org/Group50/Webapp/RotatorCuffExercise
+oo:RotatorCuffExercise rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty oo:trainsMuscle ;
+                                             owl:hasValue nci:rotatorCuff
+                                           ] ;
+                       rdfs:subClassOf oo:ShoulderExercise .
+
+
+###  http://www.example.org/Group50/Webapp/Shoulder
+oo:Shoulder rdf:type owl:Class ;
+            rdfs:subClassOf nci:Muscle .
+
+
+###  http://www.example.org/Group50/Webapp/ShoulderExercise
+oo:ShoulderExercise rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty oo:trainsMuscle ;
+                                          owl:someValuesFrom oo:Shoulder
+                                        ] ;
+                    rdfs:subClassOf oo:ExerciseTargetMuscle .
+
+
+###  http://www.example.org/Group50/Webapp/Strength
+oo:Strength rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty oo:hasRepRange ;
+                                  owl:hasValue oo:repRange_1-5
+                                ] ;
+            rdfs:subClassOf oo:TrainingGoals .
+
+
+###  http://www.example.org/Group50/Webapp/TrainingGoals
+oo:TrainingGoals rdf:type owl:Class .
+
+
+###  http://www.example.org/Group50/Webapp/TrapeziusExercise
+oo:TrapeziusExercise rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty oo:trainsMuscle ;
+                                           owl:hasValue nci:trapezius
+                                         ] ;
+                     rdfs:subClassOf oo:BackExercises .
+
+
+###  http://www.example.org/Group50/Webapp/TricepExercise
+oo:TricepExercise rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty oo:trainsMuscle ;
+                                        owl:hasValue nci:tricep
+                                      ] ;
+                  rdfs:subClassOf oo:ArmExercise .
+
+
+###  http://www.example.org/Group50/Webapp/Upper_AbdomenExercise
+oo:Upper_AbdomenExercise rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                               owl:onProperty oo:trainsMuscle ;
+                                               owl:hasValue nci:upper_Abdomen
+                                             ] ;
+                         rdfs:subClassOf oo:Abdomenexercise .
+
+
+###  http://www.example.org/Group50/Webapp/Utility
+oo:Utility rdf:type owl:Class ;
+           rdfs:subClassOf oo:Exercise_Classification .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/abductor
+nci:abductor rdf:type owl:NamedIndividual ,
+                      oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/adductor
+nci:adductor rdf:type owl:NamedIndividual ,
+                      oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/bicep
+nci:bicep rdf:type owl:NamedIndividual ,
+                   oo:Arm .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/calves
+nci:calves rdf:type owl:NamedIndividual ,
+                    oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/deltoid
+nci:deltoid rdf:type owl:NamedIndividual ,
+                     oo:Shoulder .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/erector_Spinae
+nci:erector_Spinae rdf:type owl:NamedIndividual ,
+                            oo:Back .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/forearm
+nci:forearm rdf:type owl:NamedIndividual ,
+                     oo:Arm .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/glutes
+nci:glutes rdf:type owl:NamedIndividual ,
+                    oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/hamstring
+nci:hamstring rdf:type owl:NamedIndividual ,
+                       oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/latissimus_Dorsi
+nci:latissimus_Dorsi rdf:type owl:NamedIndividual ,
+                              oo:Back .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/lower_Abdomen
+nci:lower_Abdomen rdf:type owl:NamedIndividual ,
+                           oo:Abdomen .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/obliques
+nci:obliques rdf:type owl:NamedIndividual ,
+                      oo:Abdomen .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/pectoralis_Major
+nci:pectoralis_Major rdf:type owl:NamedIndividual ,
+                              oo:Chest .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/pectoralis_Minor
+nci:pectoralis_Minor rdf:type owl:NamedIndividual ,
+                              oo:Chest .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/quadricep
+nci:quadricep rdf:type owl:NamedIndividual ,
+                       oo:Leg .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/rhomboid
+nci:rhomboid rdf:type owl:NamedIndividual ,
+                      oo:Back .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/rotatorCuff
+nci:rotatorCuff rdf:type owl:NamedIndividual ,
+                         oo:Shoulder .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/trapezius
+nci:trapezius rdf:type owl:NamedIndividual ,
+                       oo:Back .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/tricep
+nci:tricep rdf:type owl:NamedIndividual ,
+                    oo:Arm .
+
+
+###  http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl/upper_Abdomen
+nci:upper_Abdomen rdf:type owl:NamedIndividual ,
+                           oo:Abdomen .
+
+
+###  http://www.example.org/Group50/Webapp/auxiliary
+oo:auxiliary rdf:type owl:NamedIndividual ,
+                      oo:Utility .
+
+
+###  http://www.example.org/Group50/Webapp/barbell
+oo:barbell rdf:type owl:NamedIndividual ,
+                    oo:Equipment .
+
+
+###  http://www.example.org/Group50/Webapp/basic
+oo:basic rdf:type owl:NamedIndividual ,
+                  oo:Utility .
+
+
+###  http://www.example.org/Group50/Webapp/bodyweight
+oo:bodyweight rdf:type owl:NamedIndividual ,
+                       oo:Equipment .
+
+
+###  http://www.example.org/Group50/Webapp/cable
+oo:cable rdf:type owl:NamedIndividual ,
+                  oo:Equipment .
+
+
+###  http://www.example.org/Group50/Webapp/compound
+oo:compound rdf:type owl:NamedIndividual ,
+                     oo:Mechanics .
+
+
+###  http://www.example.org/Group50/Webapp/dumbbell
+oo:dumbbell rdf:type owl:NamedIndividual ,
+                     oo:Equipment .
+
+
+###  http://www.example.org/Group50/Webapp/isolated
+oo:isolated rdf:type owl:NamedIndividual ,
+                     oo:Mechanics .
+
+
+###  http://www.example.org/Group50/Webapp/machine
+oo:machine rdf:type owl:NamedIndividual ,
+                    oo:Equipment .
+
+
+###  http://www.example.org/Group50/Webapp/pull
+oo:pull rdf:type owl:NamedIndividual ,
+                 oo:Force .
+
+
+###  http://www.example.org/Group50/Webapp/push
+oo:push rdf:type owl:NamedIndividual ,
+                 oo:Force .
+
+
+###  http://www.example.org/Group50/Webapp/repRange_1-5
+oo:repRange_1-5 rdf:type owl:NamedIndividual ,
+                         oo:RepRange .
+
+
+###  http://www.example.org/Group50/Webapp/repRange_13-25
+oo:repRange_13-25 rdf:type owl:NamedIndividual ,
+                           oo:RepRange .
+
+
+###  http://www.example.org/Group50/Webapp/repRange_6-12
+oo:repRange_6-12 rdf:type owl:NamedIndividual ,
+                          oo:RepRange .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( oo:Abdomen
+                oo:Arm
+                oo:Back
+                oo:Chest
+                oo:Leg
+                oo:Shoulder
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
